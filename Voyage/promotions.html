@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2_promotions</title>
+    <link rel="stylesheet" href="./promotions_styles.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-/fPpJ4ha9g6LJvostjrgf0+40QZS7wzKtG1GGh7VQfYjz9q9RD0YLbpvYjZE1gx5" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <div class="img_logo">
+            <img src="./ressources/header_footer/logo_agence_1_PNG_300X300_izeelogo.png" alt="logo de l'agence">
+        </div>
+        <nav class="nav_head">
+            <div class="ul_head">
+                <ul>
+                    <li><a href="index.html" style="color: black;" class="text_ul_head">Accueil</a></li>
+                    <li><a href="promotions.html" style="color: black" class="text_ul_head">Promotions</a></li>
+                    <li><a href="destinations.html" style="color: black" class="text_ul_head">Destinations</a></li>
+                    <li><a href="contact.html" style="color: black" class="text_ul_head">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img src="./ressources/header_footer/menu.png" alt="Menu" class="menu-hamburger">
+    </header>
+
+    
+    <div id="flexbox">
+
+        <section style="margin-top: 5%;">
+            <div class="box_titre">
+                <div class="promo_titre">
+                    <h2>Roue des Promotions !</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="flex_main">
+            
+            <div id="roue">
+                <img src="./ressources/promotions/roue.png" alt="Roue de la fortune" id="img-roue">
+            </div>
+            <div id="popup" class="hidden">
+                <h2>Résultat de la roue</h2>
+                <p id="resultat"></p>
+                <button id="fermer">Fermer</button>
+            </div>
+            
+            
+            
+            
+            
+            <div id="vac">
+                <img src="./ressources/promotions/promo_paris.jpg" id="voyage">
+                <h3>PARIS</h3>
+                <p class="txt">Votre voyage à Paris s’annonce riche en découvertes ! Paris est une ville où le touriste est
+                    sans cesse invité à la flânerie : dans les Jardins du Luxembourg ou le Jardin des Plantes, dans les
+                    innombrables parcs de la ville, de l’immense bois de Boulogne au romantique parc Monceau.</p>
+                <input type="button" value="Réserver" class="inp">
+                <span id="prix">Prix: 1 841€</span>
+            </div>
+
+            
+
+
+            <div id="vac_venise">
+                <img src="./ressources/promotions/promo_venise.jpg" id="voyage_venise">
+                <h3>VENISE</h3>
+                <p class="txt_venise">Si vous embarquez à Venise, vous n'aurez pas le temps de découvrir cette cité lacustre
+                    incroyable. Situé à 10' à pied du terminal croisière ou votre navire accostera. Ce métro vous conduira à
+                    la Piazza di Roma, d’où partent tous les vaporettos pour découvrir Venise.</p>
+                <input type="button" value="Réserver" class="inp">
+                <span id="prix">Prix: 770€</span>
+            </div>
+        </div>
+
+
+    </div>
+     
+
+    <footer>
+       
+        <ul class="list_foot">
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#covid-19">Covid-19</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#carriere">Carrière</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#conditions-vente">Conditions de vente</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#numero-urgence">Numéro d'urgence</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#article-presse">Article de Presse</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#copyright">© Copyright</a></li>
+            <img src="" alt="">
+        </ul>
+
+        
+        <ul class="list_foot2">
+            <li><img src="./ressources/header_footer/logo_smile.svg" width-="20px" height="20px">Plus de 98% de clients satisfaits</li>
+            <li><img src="./ressources/header_footer/logo_plan.svg" width-="20px" height="20px">Plus de 120 destinations</li>
+            <li><img src="./ressources/header_footer/logo_earth.svg" width-="20px" height="20px">Plus de 70 agences de voyage</li>
+            <li><img src="./ressources/header_footer/logo_secure.svg" width-="20px" height="20px">Paiement sécurisé</li>
+        </ul>
+
+       
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+   <!-- Modal article de presse-->
+   <div class="modal fade" id="article-presse" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Article de Presse</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p> <strong>On parle de nous !</strong></p>
+            <img src="./ressources/header_footer/article_journal1.jpg" width="450" height="400"> 
+            <p> <em>Bon ok c'est un fake</em> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal copyright-->
+<div class="modal fade" id="copyright" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Copyright TOUT DROIT RÉSERVÉ</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <p> <strong>Site fait avec ambition, motivation, et bonne ambiance</strong></p>
+           <p> Equipe :</p>
+           <p><strong> Wissem.B </strong></p>
+           <p><strong> Adrien.S </strong></p>
+           <p><strong> Audry.E </strong></p>
+           <p><strong> Sandra.R </strong></p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+      <!-- Modal carriere-->
+        <div class="modal fade" id="carriere" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Carrière</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <p> <strong>Nous recherchons à aggrandir nos équipes tout au long de l'année !</strong></p>
+                <p> Comment postulez en ligne ? Pour cela adressez nous une demande de rendez vous dans le formulaire contact. Nous vous répondrons dans les plus bref délais ! </p>
+                    <!-- renvoyer sur postulez en ligne sur la page html contact avec un h ref ? -->
+                    <!-- <a href="page4-contact.html"> Postulez en ligne</a> -->
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        
+
+
+
+        <!-- Modal numéro d'urgence-->
+        <div class="modal fade" id="numero-urgence" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Numéro d'Urgence</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>En cas d'urgence, ou pour toute question :<strong> + 1 305 538 1111</strong></p>
+                    <p>Numéro payant : 0,50$ / mn + 2£ / cout de l'appel</p>
+                <p> Service ouvert sur horaire de mairie : du lundi au vendredi de 8h30 à 12h00 et de 14h à 16h00</p>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- Modal conditions-vente-->
+        <div class="modal fade" id="conditions-vente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Conditions de Vente</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>En choississant un voyage sur notre site, vous choississez en même temps l'assurance qui va avec. Car sur notre site tout est compris sur le prix final !</strong></p>
+
+                    <p><strong>Voici ce qu'elle vous assure : </strong></p>
+                    <p>Hébergement en cas d'urgence dans un établissement hotel équivalent.</p>
+                    <p>Retard sur votre vol ? Vous prendrez le prochain pour le même prix !</p>
+                    <p>Vol annulé ? Vous prendez le prochain en payant la différence !</p>
+                    <p>Location voiture en faillite : débrouillez vous.</p>
+                    <p>Modification gratuite 24h en avance, sinon : un supplément de 1 000€ vous sera demandé.</p>
+                    <p>Droit de rétractation de 2 minutes après validation de votre paiement</p>
+                    
+                    <p><strong>Ce que l'assurance ne prends pas en compte :</strong></p>
+
+                    <p>Catastrophe naturelle</p>
+                    <p>Grêve du personnel </p>
+                    <p>Mort des participants</p>
+                    <p>Vaudou sur voyageurs</p>
+                    <p> Moustique tigre / cafard / punaize de lit</p>
+                    <p> Maladie ramenées</p>
+                    <p>Malediction d'objet souvenir</p>
+                    <p>Vol de téléphone par un pickpocket</p>
+                    <p> Bagages en soutes abimés</p>
+                    
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+<div class="modal fade" id="covid-19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialogue-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Covid-19</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <p>Nous sommes là pour vous aider ! </p>
+                        <p>Votre sécurité est notre priorité. Si vous pensez que la pandémie de coronavirus (COVID-19) 
+                            peut affecter vos projets de voyage, veuillez consulter notre Centre d'aide. Vous trouverez 
+                            également plus d'informations à ce sujet ci-dessous.</p>
+                            
+                        
+                        <!-- Renvois sur numéro d'urgence => <a href="page-numero-urgence-dumodal.html"> Centre d'aide.</a>-->
+                        
+                        
+                        <p> <strong>Les pays concernés par un test négatif : </strong></p>
+                        
+                        <p>Algérie</p>
+                        <p>Croatie</p>
+                        <p>Danemarque</p>
+                        <p>Etats-unis</p>
+                        <p>France</p>
+                        <p>Finlande</p>
+                        <p>Japon</p>
+                        <p>Lituanie</p>
+                        <p> Nouvelle zélande</p>
+                        <p> Pérou</p>
+                        <p> Quatar</p>
+                        <p> Uruguay</p>
+            
+                       <p> <strong>Les pays concernés par un vaccin à jour*:</strong></p>
+                        
+                       <p>Albanie</p>
+                       <p> Australie</p>
+                       <p> Bosnie</p>
+                       <p> Brésil</p>
+                       <p> Canada</p>
+                       <p> Chine</p>
+                        <p> France</p>
+                        <p> Iran</p>
+                        <p> Namibie</p>
+                        <p> Norvège</p>
+                        <p> Russie</p>
+                        <p> Suède</p>
+            
+                        <p> <strong>* : A jour signifie que dans votre pays d'origine vous soyez à jour du nombre de doses minimales requises.</strong></p>
+            
+                </div>
+               
+              </div>
+            </div>
+        </div>
+
+                    
+        <script src="roue.js"></script>
+
+                        
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".ul_head")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+   
+</html>
